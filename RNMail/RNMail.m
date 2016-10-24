@@ -99,6 +99,8 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
                 mimeType = @"text/vcard";
             } else if ([attachmentType isEqualToString:@"json"]) {
                 mimeType = @"application/json";
+            } else if ([attachmentType isEqualToString:@"octet"]) {
+                mimeType = @"application/octet-stream";
             }
 
             // Add attachment
